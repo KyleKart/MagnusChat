@@ -216,15 +216,15 @@
       scaffolding.setAccentColor("#404040");
 
       {const providers = {};
-providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://clouddata.turbowarp.org", "p4-@Cloud Chat Experiment KYLE.sb3");
 providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@Cloud Chat Experiment KYLE.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider("wss://clouddata.turbowarp.org", "p4-@Cloud Chat Experiment KYLE.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
-scaffolding.addCloudProviderOverride("☁ Encoded Value", providers["ws"] || null);
-scaffolding.addCloudProviderOverride("☁ message", providers["ws"] || null);
-scaffolding.addCloudProviderOverride("☁ broadcast", providers["ws"] || null);
 scaffolding.addCloudProviderOverride("☁ localsavedname", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ name?", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ numbers", providers["local"] || null);
+scaffolding.addCloudProviderOverride("☁ Encoded Value", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ message", providers["ws"] || null);
+scaffolding.addCloudProviderOverride("☁ broadcast", providers["ws"] || null);
 };
 
       if (false) {
