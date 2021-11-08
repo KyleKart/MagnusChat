@@ -1,2 +1,1 @@
-this is a test for the /get command!
-if you see this then the command worked!
+if you see this then the command worked
