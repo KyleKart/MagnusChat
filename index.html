@@ -208,7 +208,7 @@
         (asset) => new URL('./assets/' + asset.assetId + '.' + asset.dataFormat, location).href
       );
       storage.onprogress = (total, loaded) => {
-        setProgress(0.2 + (loaded / total) * 0.8);
+        setProgress(0.2 + (loaded / total) * 0.78);
       };
       setProgress(0.1);
 
@@ -322,7 +322,7 @@ scaffolding.addCloudProviderOverride("☁ broadcast", providers["ws"] || null);
         ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":false});
       }
 
-      for (const extension of []) {
+      for (const extension of ["https://sheeptester.github.io/javascripts/utilities.js"]) {
         vm.extensionManager.loadExtensionURL(extension);
       }
     } catch (e) {
